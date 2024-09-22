@@ -74,25 +74,29 @@
 //
 //
 //
+// STATE IN FUNCTION COMPONENT
+//
+//
+//
 //
 // STATE DEFINE  (first import react when you define the state)
 //   usestate-- usestate allows to maintain to state and it is a huk
 
-import { useState } from "react";
+// import { useState } from "react";
 
-function App() {
-  const [data, setData] = useState("devesh");
-  function updatedata() {
-    setData("Anirav katariya");
-  }
-  return (
-    <div>
-      <h1>{data}</h1>
-      <button onClick={updatedata}>click me</button>
-    </div>
-  );
-}
-export default App;
+// function App() {
+//   const [data, setData] = useState("devesh");
+//   function updatedata() {
+//     setData("Anirav katariya");
+//   }
+//   return (
+//     <div>
+//       <h1>{data}</h1>
+//       <button onClick={updatedata}>click me</button>
+//     </div>
+//   );
+// }
+// export default App;
 
 //
 //
@@ -116,3 +120,108 @@ export default App;
 // }
 
 // export default App;
+
+//
+//
+//
+//
+// STATE IN CLASS COMPONENT
+//
+//
+//
+//
+import React, { Component } from "react";
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      data: "devesh",
+    };
+  }
+  apple() {
+    this.setState({ data: "Anirav katariya" });
+  }
+  render() {
+    return (
+      <div className="App">
+        <h1>{this.state.data}</h1>
+        <button onClick={() => this.apple()}>update me</button>
+      </div>
+    );
+  }
+}
+export default App;
+// //
+//
+//
+//
+// import React, { Component } from "react";
+// class App extends Component {
+//   constructor() {
+//     super();
+//     this.state = {
+//       data: 1,
+//     };
+//   }
+//   apple() {
+//     this.setState({ data: this.state.data + 1 });
+//   }
+//   render() {
+//     return (
+//       <div className="App">
+//         <h1>{this.state.data}</h1>
+//         <button onClick={() => this.apple()}>update me</button>
+//       </div>
+//     );
+//   }
+// }
+// export default App;
+
+//
+//
+//
+// PROPS in REACT
+//
+//
+// PROPS FUNCTIONAL COMPONENT
+//
+//
+// //
+// index.js me call kar rakha h
+
+// //
+// //
+// //
+// function Users(props) {
+//   console.log(props);
+//   return (
+//     <div
+//       style={{ backgroundColor: "skyblue", margin: 10, textAlign: "center" }}
+//     >
+//       <h1>Hello {props.name}</h1>
+//       <h2>Email : {props.email}</h2>
+//       <h3>phone {props.phone}</h3>
+//     </div>
+//   );
+// }
+// export default Users;
+
+// import React, { useState } from "react";
+
+// function Users() {
+//   const [name, setName] = (useState = "devesh");
+//   return (
+//     <div>
+//       <h1>devesh </h1>
+//       <Users name={name} />
+//       <button
+//         onClick={() => {
+//           setName("ravi");
+//         }}
+//       >
+//         click me{" "}
+//       </button>
+//     </div>
+//   );
+// }
+// export default Users;
