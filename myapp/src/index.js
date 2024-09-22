@@ -1,13 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import Users from "./Users";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
+    <Users />
+    {/* 
+    // 
+    // 
+    // 
+    // 
+     */}
+    {/* PROPS  IN FUNCTION */}
+    {/* <Users name={"Devesh"} email="devesh@gmail.com" phone="xxxxxxx67688" />
+    <Users name={"Anirav"} email="anirav@gmail.com" phone="xxxxxxx67688" />
+    <Users name={"Ravi"} email="ravi@gmail.com" phone="xxxxxxx67688" /> */}
   </React.StrictMode>
 );
 
