@@ -192,19 +192,19 @@
 // //
 // //
 // //
-function Users(props) {
-  console.log(props);
-  return (
-    <div
-      style={{ backgroundColor: "skyblue", margin: 10, textAlign: "center" }}
-    >
-      <h1>Hello {props.name}</h1>
-      <h2>Email : {props.email}</h2>
-      <h3>phone {props.phone}</h3>
-    </div>
-  );
-}
-export default Users;
+// function Users(props) {
+//   console.log(props);
+//   return (
+//     <div
+//       style={{ backgroundColor: "skyblue", margin: 10, textAlign: "center" }}
+//     >
+//       <h1>Hello {props.name}</h1>
+//       <h2>Email : {props.email}</h2>
+//       <h3>phone {props.phone}</h3>
+//     </div>
+//   );
+// }
+// export default Users;
 
 // import React, { useState } from "react";
 
@@ -225,3 +225,25 @@ export default Users;
 //   );
 // }
 // export default Users;
+//
+//
+//
+//
+//
+// PROPS IN CLASS COMPONENT
+//
+//  App.js me bhi likha h
+//
+//
+//
+import React from "react";
+export default class Users extends React.Component {
+  render() {
+    return (
+      <div style={{ backgroundColor: "skyblue", margin: 20 }}>
+        <h1>Hello {this.props.name}</h1>
+        <h3>{this.props.email}</h3>
+      </div>
+    );
+  }
+}
