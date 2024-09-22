@@ -130,27 +130,27 @@
 //
 //
 //
-import React, { Component } from "react";
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      data: "devesh",
-    };
-  }
-  apple() {
-    this.setState({ data: "Anirav katariya" });
-  }
-  render() {
-    return (
-      <div className="App">
-        <h1>{this.state.data}</h1>
-        <button onClick={() => this.apple()}>update me</button>
-      </div>
-    );
-  }
-}
-export default App;
+// import React, { Component } from "react";
+// class App extends Component {
+//   constructor() {
+//     super();
+//     this.state = {
+//       data: "devesh",
+//     };
+//   }
+//   apple() {
+//     this.setState({ data: "Anirav katariya" });
+//   }
+//   render() {
+//     return (
+//       <div className="App">
+//         <h1>{this.state.data}</h1>
+//         <button onClick={() => this.apple()}>update me</button>
+//       </div>
+//     );
+//   }
+// }
+// export default App;
 // //
 //
 //
@@ -192,19 +192,19 @@ export default App;
 // //
 // //
 // //
-// function Users(props) {
-//   console.log(props);
-//   return (
-//     <div
-//       style={{ backgroundColor: "skyblue", margin: 10, textAlign: "center" }}
-//     >
-//       <h1>Hello {props.name}</h1>
-//       <h2>Email : {props.email}</h2>
-//       <h3>phone {props.phone}</h3>
-//     </div>
-//   );
-// }
-// export default Users;
+function Users(props) {
+  console.log(props);
+  return (
+    <div
+      style={{ backgroundColor: "skyblue", margin: 10, textAlign: "center" }}
+    >
+      <h1>Hello {props.name}</h1>
+      <h2>Email : {props.email}</h2>
+      <h3>phone {props.phone}</h3>
+    </div>
+  );
+}
+export default Users;
 
 // import React, { useState } from "react";
 
